@@ -61,7 +61,8 @@ console.log(x.colorize(`
 
 ```
 
-This produces:
+It produces:
+
 <img src="resources/ChilkDutchFlag.png" width="400" />
 
 ## Extend

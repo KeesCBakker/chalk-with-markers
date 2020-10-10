@@ -2,26 +2,6 @@ import { chilker, asciiArtChilker, Chilker} from '../src';
 import { expect } from "chai";
 import chalk from "chalk";
 
-describe("custom", () => {
-
-    it("MD example", ()=>{
-    
-
-        const x = new Chilker();
-        x.set("[r]", chalk.bgRed.black);
-        x.set("[w]", chalk.bgWhite.black);
-        x.set("[b]", chalk.bgBlue.black);
-        x.set("[/]", chalk.reset);
-
-        console.log(x.colorize(`
-[r] X X X X 
-[w]  X X X  
-[b] X X X X 
-[/]         `));
-        });
-
-});
-
 describe("chilker", () => {
 
     it("RGB", () => {
@@ -71,6 +51,24 @@ b\\____/g_/ /_/y___/o_____/r_/ |_|
         console.log();
         console.log();
     });
+
+    it("Custom", ()=>{
+    
+
+        const x = new Chilker();
+        x.set("[r]", chalk.bgRed.black);
+        x.set("[w]", chalk.bgWhite.black);
+        x.set("[b]", chalk.bgBlue.black);
+        x.set("[/]", chalk.reset);
+
+        console.log();
+        console.log(x.colorize(`
+[r] X X X X 
+[w]  X X X  
+[b] X X X X 
+[/]         `));
+        });
+        console.log();
 
 });
 

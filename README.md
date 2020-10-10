@@ -1,4 +1,4 @@
-# Chilk -- because I love ASCII art
+# Chilk -- for the 💖 of ASCII art
 
 I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="">Chalk</a>. But creating those strings got a little too verbose, that's why I created this simple lib.
 

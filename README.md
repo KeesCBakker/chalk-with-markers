@@ -1,6 +1,6 @@
 # Chilk -- for the 💖 of ASCII art
 
-I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="">Chalk</a>. But creating those strings got a little too verbose, that's why I created this simple lib.
+I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="https://www.npmjs.com/package/chalk">Chalk</a>. But creating those strings got a little too verbose, that's why I created this simple lib.
 
 
 ```js
@@ -61,7 +61,10 @@ console.log(x.colorize(`
 
 ```
 
+This produces:
+<img src="resources/ChilkDutchFlag.png" />
 
+## Extend
 Can I extend the mappings? Yes you can!
 
 ```js

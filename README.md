@@ -19,7 +19,7 @@ b\\____/g_/ /_/y___/o_____/r_/ |_|
 
 It produces:
 
-<img src="resources/ChilkSplash.png" width="400" />
+<img src="resources/ChilkSplash.png" width="600" />
 
 Note: I use the <a href="https://patorjk.com/software/taag/#p=display&f=Graffiti&t=CHILK">TAAG by patorjk</a> to generate the art.
 
@@ -37,7 +37,7 @@ console.log(chilker.colorize("- Checked status for [y]Recipes[/], website is [r]
 
 It produces:
 
-<img src="resources/ChilkText.png" width="400" />
+<img src="resources/ChilkText.png" width="600" />
 
 ## Own mappings
 Can I make my own tokens? Yes, you can!
@@ -63,7 +63,7 @@ console.log(x.colorize(`
 
 It produces:
 
-<img src="resources/ChilkDutchFlag.png" width="400" />
+<img src="resources/ChilkDutchFlag.png" width="600" />
 
 ## Extend
 Can I extend the mappings? Yes you can!

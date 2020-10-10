@@ -11,10 +11,18 @@
 import chalk from 'chalk';
 
 export class Chilker {
-  constructor(private map: Map<string, chalk.Chalk>) {
+  private map: Map<string, chalk.Chalk>;
+
+  constructor(map: Map<string, chalk.Chalk> | null = null) {
+    if (map) {
+      this.map = map;
+    }
+    else {
+      this.map = new Map<string, chalk.Chalk>();
+    }
   }
 
-  add(key: string, value: chalk.Chalk) {
+  set(key: string, value: chalk.Chalk) {
     this.map.set(key, value);
   }
 
@@ -58,10 +66,12 @@ export function generateDefaultMap(key: (key: string) => string) {
     [key("m"), chalk.hex("FF00FF")], // HTML magenta
     [key("c"), chalk.hex("00FFFF")], // HTML cyan
     [key("w"), chalk.hex("FFFFFF")], // HTML white
+    [key("o"), chalk.hex("FFA500")], // HTML orange
     [key("x"), chalk.hex("000000")], // HTML black
-    [key("/"), chalk.reset]          // just rest
   ]);
 }
 
 export const chilker = new Chilker(generateDefaultMap(k => `[${k}]`));
+chilker.set("[/]", chalk.reset);
+
 export const asciiArtChilker = new Chilker(generateDefaultMap(k => k));

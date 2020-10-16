@@ -7,16 +7,14 @@ const { asciiArtChalker } = require("chalk-with-markers");
 
 console.log(asciiArtChalker.colorize(`
 
-qb   ______g__  __y____o__    r__ __
-qb  / ____/g / / /y  _/o /   r/ //_/
-qb / /   g/ /_/ /y/ /o/ /   r/ ,<   
-qb/ /___g/ __  /y/ /o/ /___r/ /| |  
+b   ______g__  __y____o__    r__ __
+b  / ____/g / / /y  _/o /   r/ //_/
+b / /   g/ /_/ /y/ /o/ /   r/ ,<   
+b/ /___g/ __  /y/ /o/ /___r/ /| |  
 b\\____/g_/ /_/y___/o_____/r_/ |_|  
 
 `));
 ```
-Note: `q` resets the color, but we use it as padding here,
-because the `\\` is an escpaed character.
 
 <img src="resources/ChilkSplash.png" width="600" />
 

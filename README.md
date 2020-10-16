@@ -85,17 +85,15 @@ x.set("p", chalk.hex("#FFC0CB")); // add HTML pink
 ## Default color markings
 We have the following 
 
-| color                                                     | HTML name | HEX      | `chalker` marker | `asciiArtChalker` marker |
-| --------------------------------------------------------- | --------- | -------- | ---------------- | ------------------------ |
-| ![#FF0000](https://via.placeholder.com/15/FF0000/?text=+) | red       | `FF0000` | `[r]`            | `r`                      |
-| ![#00FF00](https://via.placeholder.com/15/00FF00/?text=+) | lime      | `00FF00` | `[g]`            | `g`                      |
-
-
-    [key("b"), chalk.hex("0080FF")], // HTML light blue
-    [key("y"), chalk.hex("FFFF00")], // HTML yellow
-    [key("m"), chalk.hex("FF00FF")], // HTML magenta
-    [key("c"), chalk.hex("00FFFF")], // HTML cyan
-    [key("w"), chalk.hex("FFFFFF")], // HTML white
-    [key("o"), chalk.hex("FFA500")], // HTML orange
-    [key("x"), chalk.hex("000000")], // HTML black
-    [key("q"), chalk.reset]
+| color                                                     | HTML name  | HEX      | `chalker` marker | `asciiArtChalker` marker | notes |
+| --------------------------------------------------------- | ---------- | -------- | ---------------- | ------------------------ | ----- |
+| ![#FF0000](https://via.placeholder.com/25/FF0000/?text=+) | red        | `FF0000` | `[r]`            | `r`                      |       |
+| ![#00FF00](https://via.placeholder.com/25/00FF00/?text=+) | lime       | `00FF00` | `[g]`            | `g`                      |       |
+| ![#0080FF](https://via.placeholder.com/25/0080FF/?text=+) | light blue | `00FF00` | `[b]`            | `b`                      |       |
+| ![#0080FF](https://via.placeholder.com/25/0080FF/?text=+) | yellow     | `0080FF` | `[y]`            | `y`                      |       |
+| ![#FF00FF](https://via.placeholder.com/25/FF00FF/?text=+) | magenta    | `FF00FF` | `[m]`            | `m`                      |       |
+| ![#00FFFF](https://via.placeholder.com/25/FF00FF/?text=+) | cyan       | `00FFFF` | `[c]`            | `c`                      |       |
+| ![#FFFFFF](https://via.placeholder.com/25/FFFFFF/?text=+) | white      | `FFFFFF` | `[w]`            | `w`                      |       |
+| ![#FFA500](https://via.placeholder.com/25/FFA500/?text=+) | orange     | `FFA500` | `[o]`            | `o`                      |       |
+| ![#000000](https://via.placeholder.com/25/000000/?text=+) | black      | `000000` | `[b]`            | `b`                      |       |
+|                                                           |            |          | `[q]` or `[/]`   | `q`                      | reset |

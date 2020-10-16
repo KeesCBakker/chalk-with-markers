@@ -1,6 +1,6 @@
 /*!
- * Chilk
- * https://github.com/KeesCBakker/chilk
+ * Chalk with Markers
+ * https://github.com/KeesCBakker/chalk-with-markers
  * http://keestalkstech.com
  *
  * Copyright Kees C. Bakker / KeesTalksTech

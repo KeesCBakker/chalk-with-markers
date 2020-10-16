@@ -2,11 +2,6 @@
 
 I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="https://www.npmjs.com/package/chalk">Chalk</a>. But creating those strings got a little too verbose, that's why I created this lib.
 
-Ideas:
-- light weight
-- extendable
-- non-verbose markers
-- readable in 
 
 Check this example:
 ```js
@@ -30,6 +25,10 @@ The code produces:
 <img src="resources/ChilkSplash.png" width="600" />
 
 Note: I use the <a href="https://patorjk.com/software/taag/#p=display&f=Graffiti&t=CHILK">TAAG by patorjk</a> to generate the art.
+
+This lib should just:
+- be light weight & extendable
+- provide readable, non-verbose markers
 
 
 ## Text highlight

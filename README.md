@@ -81,3 +81,21 @@ x.set("p", chalk.hex("#FFC0CB")); // add HTML pink
 
 
 ```
+
+## Default color markings
+We have the following 
+
+| `chalker` marker | `asciiArtChalker` marker | HTML |
+| --- | --- | --- |
+| `[r]` | `r` | - ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) `#FF0000` ` |
+| `[g]` | `g` | - ![#00FF00](https://via.placeholder.com/15/00FF00/000000?text=+) `#00FF00` ` |
+
+
+    [key("b"), chalk.hex("0080FF")], // HTML light blue
+    [key("y"), chalk.hex("FFFF00")], // HTML yellow
+    [key("m"), chalk.hex("FF00FF")], // HTML magenta
+    [key("c"), chalk.hex("00FFFF")], // HTML cyan
+    [key("w"), chalk.hex("FFFFFF")], // HTML white
+    [key("o"), chalk.hex("FFA500")], // HTML orange
+    [key("x"), chalk.hex("000000")], // HTML black
+    [key("q"), chalk.reset]

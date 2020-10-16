@@ -2,8 +2,6 @@
 
 I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="https://www.npmjs.com/package/chalk">Chalk</a>. But creating those strings got a little too verbose, that's why I created this lib.
 
-
-Check this example:
 ```js
 const { asciiArtChalker } = require("chalk-with-markers");
 
@@ -19,8 +17,6 @@ b\\____/g_/ /_/y___/o_____/r_/ |_|
 ```
 Note: `q` resets the color, but we use it as padding here,
 because the `\\` is an escpaed character.
-
-The code produces:
 
 <img src="resources/ChilkSplash.png" width="600" />
 

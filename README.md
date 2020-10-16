@@ -93,7 +93,7 @@ We have the following
 | ![#0080FF](https://via.placeholder.com/25/0080FF/?text=+) | yellow     | `0080FF` | `[y]`            | `y`                      |       |
 | ![#FF00FF](https://via.placeholder.com/25/FF00FF/?text=+) | magenta    | `FF00FF` | `[m]`            | `m`                      |       |
 | ![#00FFFF](https://via.placeholder.com/25/FF00FF/?text=+) | cyan       | `00FFFF` | `[c]`            | `c`                      |       |
-| ![#FFFFFF](https://via.placeholder.com/25/FFFFFF/?text=+) | white      | `FFFFFF` | `[w]`            | `w`                      |       |
 | ![#FFA500](https://via.placeholder.com/25/FFA500/?text=+) | orange     | `FFA500` | `[o]`            | `o`                      |       |
+| ![#FFFFFF](https://via.placeholder.com/25/FFFFFF/?text=+) | white      | `FFFFFF` | `[w]`            | `w`                      |       |
 | ![#000000](https://via.placeholder.com/25/000000/?text=+) | black      | `000000` | `[b]`            | `b`                      |       |
 |                                                           |            |          | `[q]` or `[/]`   | `q`                      | reset |

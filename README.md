@@ -8,6 +8,7 @@ Ideas:
 - non-verbose markers
 - readable in 
 
+Check this example:
 ```js
 const { asciiArtChalker } = require("chalk-with-markers");
 

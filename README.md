@@ -87,8 +87,8 @@ We have the following
 
 | `chalker` marker | `asciiArtChalker` marker | HTML |
 | --- | --- | --- |
-| `[r]` | `r` | - ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) `#FF0000` ` |
-| `[g]` | `g` | - ![#00FF00](https://via.placeholder.com/15/00FF00/000000?text=+) `#00FF00` ` |
+| `[r]` | `r` | - ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) `#FF0000 //HTML red` |
+| `[g]` | `g` | - ![#00FF00](https://via.placeholder.com/15/00FF00/000000?text=+) `#00FF00 //HTML lime` |
 
 
     [key("b"), chalk.hex("0080FF")], // HTML light blue

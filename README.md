@@ -1,23 +1,30 @@
 # Chalk with Markers -- for the 💖 of 💄 ASCII art 🤙
 
-I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="https://www.npmjs.com/package/chalk">Chalk</a>. But creating those strings got a little too verbose, that's why I created this simple lib.
+I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="https://www.npmjs.com/package/chalk">Chalk</a>. But creating those strings got a little too verbose, that's why I created this lib.
 
+Ideas:
+- light weight
+- extendable
+- non-verbose markers
+- readable in 
 
 ```js
 const { asciiArtChalker } = require("chalk-with-markers");
 
 console.log(asciiArtChalker.colorize(`
 
-b   ______g__  __y____o__    r__ __
-b  / ____/g / / /y  _/o /   r/ //_/
-b / /   g/ /_/ /y/ /o/ /   r/ ,<   
-b/ /___g/ __  /y/ /o/ /___r/ /| |  
+qb   ______g__  __y____o__    r__ __
+qb  / ____/g / / /y  _/o /   r/ //_/
+qb / /   g/ /_/ /y/ /o/ /   r/ ,<   
+qb/ /___g/ __  /y/ /o/ /___r/ /| |  
 b\\____/g_/ /_/y___/o_____/r_/ |_|  
 
 `));
 ```
+Note: `q` resets the color, but we use it as padding here,
+because the `\\` is an escpaed character.
 
-It produces:
+The code produces:
 
 <img src="resources/ChilkSplash.png" width="600" />
 
@@ -97,4 +104,3 @@ x.set("p", chalk.hex("#FFC0CB")); // add HTML pink
 
 
 ```
-

@@ -10,7 +10,7 @@
 
 import chalk from 'chalk';
 
-export class Chilker {
+export class Chalker {
   private map: Map<string, chalk.Chalk>;
 
   constructor(map: Map<string, chalk.Chalk> | null = null) {
@@ -27,7 +27,7 @@ export class Chilker {
   }
 
   clone() {
-    return new Chilker(new Map(this.map));
+    return new Chalker(new Map(this.map));
   }
 
   colorize(str: string) {
@@ -71,7 +71,7 @@ export function generateDefaultMap(key: (key: string) => string) {
   ]);
 }
 
-export const chilker = new Chilker(generateDefaultMap(k => `[${k}]`));
-chilker.set("[/]", chalk.reset);
+export const chalker = new Chalker(generateDefaultMap(k => `[${k}]`));
+chalker.set("[/]", chalk.reset);
 
-export const asciiArtChilker = new Chilker(generateDefaultMap(k => k));
+export const asciiArtChalker = new Chalker(generateDefaultMap(k => k));

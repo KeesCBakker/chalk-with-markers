@@ -1,12 +1,12 @@
-# Chilk -- for the 💖 of 💄 ASCII art 🤙
+# Chalk with Markers -- for the 💖 of 💄 ASCII art 🤙
 
 I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="https://www.npmjs.com/package/chalk">Chalk</a>. But creating those strings got a little too verbose, that's why I created this simple lib.
 
 
 ```js
-const { asciiArtChilker } = require("chilk");
+const { asciiArtChalker } = require("chalk-with-markers");
 
-console.log(asciiArtChilker.colorize(`
+console.log(asciiArtChalker.colorize(`
 
 b   ______g__  __y____o__    r__ __
 b  / ____/g / / /y  _/o /   r/ //_/
@@ -25,14 +25,14 @@ Note: I use the <a href="https://patorjk.com/software/taag/#p=display&f=Graffiti
 
 
 ## Text highlight
-If you want to highlight text, we use the default `chilker` like this:
+If you want to highlight text, we use the default `chalker` like this:
 
 ```js
-const { chilker } = require("chilk");
+const { chalker } = require("chalk-with-markers");
 
 console.log("Results:");
-console.log(chilker.colorize("- Checked status for [y]KeesTalksTech[/], website is [g]online[/]."));
-console.log(chilker.colorize("- Checked status for [y]Recipes[/], website is [r]offline[/]."));
+console.log(chalker.colorize("- Checked status for [y]KeesTalksTech[/], website is [g]online[/]."));
+console.log(chalker.colorize("- Checked status for [y]Recipes[/], website is [r]offline[/]."));
 ```
 
 It produces:
@@ -43,10 +43,10 @@ It produces:
 Can I make my own tokens? Yes, you can!
 
 ```js
-const { Chilker } = require("chilk");
+const { Chalker } = require("chalk-with-markers");
 const chalk = require("chalk");
 
-const x = new Chilker();
+const x = new Chalker();
 x.set("[r]", chalk.bgRed.black);
 x.set("[w]", chalk.bgWhite.black);
 x.set("[b]", chalk.bgBlue.black);
@@ -69,14 +69,14 @@ It produces:
 Can I extend the mappings? Yes you can!
 
 ```js
-const { asciiArtChilker } = require("chilk");
+const { asciiArtChalker } = require("chalk-with-markers");
 const chalk = require("chalk");
 
 // global extend:
-asciiArtChilker.set("p", chalk.hex("#FFC0CB")); // add HTML pink
+asciiArtChalker.set("p", chalk.hex("#FFC0CB")); // add HTML pink
 
 // or clone to use extend locally:
-const x = asciiArtChilker.clone();
+const x = asciiArtChalker.clone();
 x.set("p", chalk.hex("#FFC0CB")); // add HTML pink
 
 

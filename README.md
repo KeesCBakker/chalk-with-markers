@@ -42,8 +42,8 @@ It produces:
 ## Default color markings
 We have the following:
 
-| color                                                     | HTML name  | HEX      | `chalker` marker | `asciiArtChalker` marker | notes |
-| --------------------------------------------------------- | ---------- | -------- | ---------------- | ------------------------ | ----- |
+| color                                                        | HTML name  | HEX      | `chalker` marker | `asciiArtChalker` marker | notes |
+| ------------------------------------------------------------ | ---------- | -------- | ---------------- | ------------------------ | ----- |
 | ![#FF0000](https://via.placeholder.com/50x25/FF0000/?text=+) | red        | `FF0000` | `[r]`            | `r`                      |       |
 | ![#00FF00](https://via.placeholder.com/50x25/00FF00/?text=+) | lime       | `00FF00` | `[g]`            | `g`                      |       |
 | ![#0080FF](https://via.placeholder.com/50x25/0080FF/?text=+) | light blue | `0080FF` | `[b]`            | `b`                      |       |
@@ -52,11 +52,11 @@ We have the following:
 | ![#00FFFF](https://via.placeholder.com/50x25/00FFFF/?text=+) | cyan       | `00FFFF` | `[c]`            | `c`                      |       |
 | ![#FFA500](https://via.placeholder.com/50x25/FFA500/?text=+) | orange     | `FFA500` | `[o]`            | `o`                      |       |
 | ![#FFFFFF](https://via.placeholder.com/50x25/FFFFFF/?text=+) | white      | `FFFFFF` | `[w]`            | `w`                      |       |
-| ![#000000](https://via.placeholder.com/50x25/000000/?text=+) | black      | `000000` | `[b]`            | `b`                      |       |
-|                                                           |            |          | `[q]` or `[/]`   | `q`                      | reset |
+| ![#000000](https://via.placeholder.com/50x25/000000/?text=+) | black      | `000000` | `[k]`            | `k`                      |       |
+|                                                              |            |          | `[q]` or `[/]`   | `q`                      | resets chalk |
 
 ## Own mappings
-Can I make my own tokens? Yes, you can!
+Can I make my own markers? Yes, you can!
 
 ```js
 const { Chalker } = require("chalk-with-markers");

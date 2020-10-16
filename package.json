@@ -1,6 +1,6 @@
 {
-  "name": "chilk",
-  "version": "1.0.3",
+  "name": "chalk-with-markers",
+  "version": "1.0.4",
   "description": "Makes Chalk even more chill by helping you to simple color markers to the string 🤙",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KeesCBakker/chilk.git"
+    "url": "git+https://github.com/KeesCBakker/chalk-with-markers.git"
   },
   "keywords": [
     "events",
@@ -29,9 +29,9 @@
   "author": "Kees C. Bakker (https://keestalkstech.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KeesCBakker/chilk/issues"
+    "url": "https://github.com/KeesCBakker/chalk-with-markers/issues"
   },
-  "homepage": "https://github.com/KeesCBakker/chilk#readme",
+  "homepage": "https://github.com/KeesCBakker/chalk-with-markers#readme",
   "devDependencies": {
     "@types/chai": "^4.2.13",
     "@types/mocha": "^8.0.3",

@@ -8,8 +8,7 @@
     "test": "npm run mocha --recursive test/**/*-test.ts --exit",
     "mocha": "mocha -r ts-node/register",
     "build": "del-cli dist & tsc",
-    "prepublishOnly": "npm run build & npm test & npm version patch",
-    "postpublish": "git push origin --tags"
+    "prepublishOnly": "npm run build & npm test & npm version patch"
   },
   "repository": {
     "type": "git",

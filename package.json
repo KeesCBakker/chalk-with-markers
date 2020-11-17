@@ -1,6 +1,6 @@
 {
   "name": "chalk-with-markers",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Makes Chalk even more chill by helping you to simple color markers to the string 🤙",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

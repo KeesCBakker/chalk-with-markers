@@ -74,7 +74,7 @@ export function generateDefaultMap(key: (key: string) => string) {
     [key("w"), chalk.hex("FFFFFF")], // HTML white
     [key("o"), chalk.hex("FFA500")], // HTML orange
     [key("k"), chalk.hex("000000")], // HTML black
-    [key("k"), chalk.hex("B266FF")], // HTML purple
+    [key("p"), chalk.hex("B266FF")], // HTML purple
     [key("q"), chalk.reset],
   ]);
 }

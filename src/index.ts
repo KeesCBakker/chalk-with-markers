@@ -7,8 +7,7 @@
  * Released under the MIT license
  */
 
-
-import chalk from 'chalk';
+import chalk from "chalk";
 
 export class Chalker {
   private map: Map<string, chalk.Chalk>;
@@ -16,14 +15,21 @@ export class Chalker {
   constructor(map: Map<string, chalk.Chalk> | null = null) {
     if (map) {
       this.map = map;
-    }
-    else {
+    } else {
       this.map = new Map<string, chalk.Chalk>();
     }
   }
 
   set(key: string, value: chalk.Chalk) {
     this.map.set(key, value);
+  }
+
+  setByHex(key: string, value: string) {
+    if (value && !value.startsWith("#")) {
+      value = "#" + value;
+    }
+
+    this.map.set(key, chalk.hex(value));
   }
 
   clone() {
@@ -53,7 +59,7 @@ function createRegex(key: string) {
     return /(?<!\u001b\[(\d+;)*\d+)m/;
   }
 
-  key = key.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+  key = key.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
   return new RegExp(key);
 }
 
@@ -68,11 +74,12 @@ export function generateDefaultMap(key: (key: string) => string) {
     [key("w"), chalk.hex("FFFFFF")], // HTML white
     [key("o"), chalk.hex("FFA500")], // HTML orange
     [key("k"), chalk.hex("000000")], // HTML black
-    [key("q"), chalk.reset]
+    [key("k"), chalk.hex("B266FF")], // HTML purple
+    [key("q"), chalk.reset],
   ]);
 }
 
-export const chalker = new Chalker(generateDefaultMap(k => `[${k}]`));
+export const chalker = new Chalker(generateDefaultMap((k) => `[${k}]`));
 chalker.set("[/]", chalk.reset);
 
-export const asciiArtChalker = new Chalker(generateDefaultMap(k => k));
+export const asciiArtChalker = new Chalker(generateDefaultMap((k) => k));

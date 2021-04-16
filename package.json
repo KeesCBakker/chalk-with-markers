@@ -11,7 +11,7 @@
     "prepublishOnly": "npm run build & npm test & npm version patch",
     "audit-fix": "npm audit fix --force & npm install",
     "update": "ncu -u & npm install & npm run audit-fix",
-		"upgrade-and-publish": "git checkout master & git pull & ncu -u & git add . & git commit -m \"package upgrades\" & npm install & npm publish & git push"
+    "upgrade-and-publish": "git checkout master & git pull & ncu -u & git add . & git commit -m \"package upgrades\" & npm install & npm publish & git push"
   },
   "repository": {
     "type": "git",

@@ -36,7 +36,7 @@
   "homepage": "https://github.com/KeesCBakker/chalk-with-markers#readme",
   "devDependencies": {
     "@types/chai": "^4.2.19",
-    "@types/mocha": "^8.2.2",
+    "@types/mocha": "^9.0.0",
     "@types/node": "^15.12.5",
     "chai": "^4.3.4",
     "del-cli": "^4.0.0",

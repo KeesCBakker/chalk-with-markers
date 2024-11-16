@@ -5,6 +5,10 @@
     "outDir": "dist",
     "esModuleInterop": true,
     "declaration": true,
-    "moduleResolution": "nodenext"
-  }
+    "moduleResolution": "nodenext",
+    "lib": ["ES2022"],
+    "types": ["node", "mocha"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

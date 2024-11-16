@@ -1,7 +1,0 @@
-.metals
-.vscode
-node_modules
-resources
-src
-test
-tsconfig.json

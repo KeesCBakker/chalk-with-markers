@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "module": "NodeNext",
+    "target": "ES2022",
     "outDir": "dist",
-    "declaration": true,
-    "strict": true,
     "esModuleInterop": true,
-    "lib": ["ES2020"] // Add only the required library
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+    "declaration": true,
+    "moduleResolution": "nodenext"
+  }
 }

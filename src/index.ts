@@ -7,20 +7,21 @@
  * Released under the MIT license
  */
 
-import chalk from "chalk";
+import chalk from 'chalk';
+import {ChalkInstance} from "chalk"
 
 export class Chalker {
-  private map: Map<string, chalk.Chalk>;
+  private map: Map<string, ChalkInstance>;
 
-  constructor(map: Map<string, chalk.Chalk> | null = null) {
+  constructor(map: Map<string, ChalkInstance> | null = null) {
     if (map) {
       this.map = map;
     } else {
-      this.map = new Map<string, chalk.Chalk>();
+      this.map = new Map<string, ChalkInstance>();
     }
   }
 
-  set(key: string, value: chalk.Chalk) {
+  set(key: string, value: ChalkInstance) {
     this.map.set(key, value);
   }
 
@@ -37,7 +38,7 @@ export class Chalker {
   }
 
   colorize(str: string) {
-    this.map.forEach((value: chalk.Chalk, key: string) => {
+    this.map.forEach((value: ChalkInstance, key: string) => {
       const r = createRegex(key);
       const split = str.split(r);
       if (split && split.length > 1) {

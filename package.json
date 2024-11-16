@@ -52,6 +52,6 @@
     "chalk": "^5"
   },
   "files": [
-    "dist/src"
+    "dist"
   ]
 }

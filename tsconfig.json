@@ -1,17 +1,13 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
     "outDir": "dist",
     "declaration": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "lib": ["ES2020"] // Add only the required library
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

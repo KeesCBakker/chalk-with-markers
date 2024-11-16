@@ -8,10 +8,10 @@
     "test": "npm run mocha --recursive test/**/*-test.ts --exit",
     "mocha": "mocha -r ts-node/register",
     "build": "del-cli dist & tsc",
-    "prepublishOnly": "npm run build & npm test & npm version patch",
-    "audit-fix": "npm audit fix --force & npm install",
-    "update": "ncu -u & npm run audit-fix",
-    "upgrade-and-publish": "git checkout master & git pull & npm run update & git add . & git commit -m \"package upgrades\" & npm publish & git push"
+    "prepublishOnly": "npm test",
+    "publish-patch": "npm run build && npm test && npm version patch && npm publish",
+    "publish-minor": "npm run build && npm test && npm version minor && npm publish",
+    "publish-major": "npm run build && npm test && npm version major && npm publish"
   },
   "repository": {
     "type": "git",

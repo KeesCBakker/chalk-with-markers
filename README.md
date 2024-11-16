@@ -2,8 +2,10 @@
 
 I. Love. ASCII. Art. Seriously I can't make a NodeJS CLI or Chatbot without adding a decent splash-screen to it. That's why I love <a href="https://www.npmjs.com/package/chalk">Chalk</a>. But creating those strings got a little too verbose, that's why I created this lib.
 
+**Note: we've upgraded to ESM, as Chalk is also in ESM.**
+
 ```js
-const { asciiArtChalker } = require("chalk-with-markers");
+import { asciiArtChalker } from "chalk-with-markers";
 
 console.log(asciiArtChalker.colorize(`
 
@@ -29,7 +31,7 @@ This lib should just:
 If you want to highlight text, we use the default `chalker` like this:
 
 ```js
-const { chalker } = require("chalk-with-markers");
+import { chalker } from "chalk-with-markers";
 
 console.log("Results:");
 console.log(chalker.colorize("- Checked status for [y]KeesTalksTech[/], website is [g]online[/]."));
@@ -61,8 +63,8 @@ We have the following:
 Can I make my own markers? Yes, you can!
 
 ```js
-const { Chalker } = require("chalk-with-markers");
-const chalk = require("chalk");
+import { Chalker } from "chalk-with-markers";
+import chalk from "chalk";
 
 const x = new Chalker();
 x.set("[r]", chalk.bgRed.black);
@@ -75,7 +77,6 @@ console.log(x.colorize(`
 [w]  X X X  
 [b] X X X X 
 [/]         `));
-});
 
 ```
 
@@ -87,8 +88,8 @@ It produces:
 Can I extend the mappings? Yes you can!
 
 ```js
-const { asciiArtChalker } = require("chalk-with-markers");
-const chalk = require("chalk");
+import { asciiArtChalker } from "chalk-with-markers";
+import chalk from "chalk";
 
 // global extend:
 asciiArtChalker.set("p", chalk.hex("#FFC0CB")); // add HTML pink

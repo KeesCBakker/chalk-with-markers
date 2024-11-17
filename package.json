@@ -1,6 +1,6 @@
 {
   "name": "chalk-with-markers",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Makes Chalk even more chill by helping you to simple color markers to the string 🤙",
   "main": "dist/index.mjs",
   "type": "module",

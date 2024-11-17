@@ -1,4 +1,4 @@
-import { chalker, asciiArtChalker, Chalker} from '../src/index.js';
+import { chalker, asciiArtChalker, Chalker} from '../src/index.mjs';
 import { expect } from "chai";
 import chalk from "chalk";
 

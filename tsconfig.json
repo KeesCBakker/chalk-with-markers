@@ -9,6 +9,6 @@
     "lib": ["ES2022"],
     "types": ["node", "mocha"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/index.mts"],
   "exclude": ["node_modules"]
 }

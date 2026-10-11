@@ -3,11 +3,12 @@
     "module": "NodeNext",
     "target": "ES2022",
     "outDir": "dist",
+    "rootDir": "src",
     "esModuleInterop": true,
     "declaration": true,
     "moduleResolution": "nodenext",
     "lib": ["ES2022"],
-    "types": ["node", "mocha"]
+    "types": ["node"]
   },
   "include": ["src/**/*.ts", "src/index.mts"],
   "exclude": ["node_modules"]

@@ -1,13 +1,14 @@
 {
   "name": "chalk-with-markers",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Makes Chalk even more chill by helping you to simple color markers to the string 🤙",
   "main": "dist/index.mjs",
   "type": "module",
   "types": "dist/index.d.mts",
   "scripts": {
-    "test": "cross-env NODE_OPTIONS='--no-warnings=ExperimentalWarning' mocha -n=loader=ts-node/esm -n=es-module-specifier-resolution=node test/**/*.spec.*ts --exit",
-    "build": "del-cli dist & tsc",
+    "test": "npm run build && node --test",
+    "clean": "node scripts/clean.mjs",
+    "build": "npm run clean && tsc",
     "prepublishOnly": "npm test",
     "postpublish": "git push origin --tags",
     "publish-patch": "npm run build && npm test && npm version patch && npm publish",
@@ -19,15 +20,17 @@
     "url": "git+https://github.com/KeesCBakker/chalk-with-markers.git"
   },
   "keywords": [
-    "events",
-    "event",
-    "sender",
-    "args",
-    "strongly",
+    "chalk",
+    "chalk-markers",
+    "color",
+    "colorize",
+    "terminal",
+    "ansi",
+    "ascii-art",
+    "text-highlighting",
+    "markers",
     "typed",
-    "typescript",
-    "signal",
-    "DotNet"
+    "typescript"
   ],
   "author": "Kees C. Bakker (https://keestalkstech.com)",
   "license": "MIT",
@@ -36,21 +39,14 @@
   },
   "homepage": "https://github.com/KeesCBakker/chalk-with-markers#readme",
   "devDependencies": {
-    "@types/chai": "^5.0.1",
-    "@types/mocha": "^10.0.9",
-    "@types/node": "^22.9.0",
-    "chai": "^5",
-    "cross-env": "^7.0.3",
-    "del-cli": "^6.0.0",
-    "mocha": "^10",
-    "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "dependencies": {
-    "chalk": "^5"
+    "chalk": "^6.0.1"
   },
   "files": [
     "dist"
